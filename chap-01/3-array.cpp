@@ -1,13 +1,20 @@
 #include <iostream>
+#include <vector>
 
 int main()
 {
-    int array[] = { 0, 1, 2, 3 };
+    std::vector<int> array;
 
-    for (int i = 0; i < 4; ++i)
-    {
-        std::cout << array[i] << std::endl;
-    }
+for (int i = 0; i < 10; ++i)
+{
+    array.emplace_back(i+1);
+}
 
+for (int value : array)
+{
+    std::cout << value << std::endl;
+}
+    std::string a;
+    std::cout << a << std::endl;
     return 0;
 }
